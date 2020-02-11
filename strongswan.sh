@@ -4,7 +4,7 @@
 # Need root priv.
 # Created with this guide https://krasovsky.me/it/2016/08/strongswan-ikev2/
 # modified by Mihas
-# don't forget to open port in firewall udp/4500 and udp/500
+# don't forget to open port in firewall http/80 udp/4500 and udp/500
 # issue - don't wotk in Windows 10
 if [[ $EUID -ne 0 ]]; then
    echo "This script must be run as root" 1>&2

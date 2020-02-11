@@ -124,7 +124,9 @@ EOT
 
 ipsec restart
 systemctl restart dnsmasq
-systemctl restart networking
+
+#Failed to restart networking.service: Unit networking.service not found.
+#systemctl restart networking
 
 #При желании можно писать системные логи в /dev/null (так себе идея):
 #sudo rm /var/log/syslog && sudo ln -s /dev/null /var/log/syslog
